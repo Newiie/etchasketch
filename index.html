@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Sketch</title>
+    <script src="jscript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title">Sketch Pad</div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="button">
+                <button class="black" onclick="changeColor('black')">Black</button>
+                <button class="rainbow" onclick="changeColor('random')">Rainbow</button>
+                <button class="eraser" onclick="changeColor('white')">Eraser</button>
+                <button class="reset" onclick="resetColor()">Reset</button>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
+            <button>Set Size</button>
+            <div class="error">Value must be between 2 and 100</div>
+        </div>
+    </div>
+</body>
+</html>
