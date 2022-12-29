@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
-    <script src="jscript.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="title">Sketch Pad</div>
-        <div class="content">
-            <div class="board"></div>
-            <div class="button">
-                <button class="black" onclick="changeColor('black')">Black</button>
-                <button class="rainbow" onclick="changeColor('random')">Rainbow</button>
-                <button class="eraser" onclick="changeColor('white')">Eraser</button>
-                <button class="reset" onclick="resetColor()">Reset</button>
-            </div>
-        </div>
-        <div>
-            <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
-            <button>Set Size</button>
-            <div class="error">Value must be between 2 and 100</div>
-        </div>
-    </div>
+    <header><h1 class="flex">Etch-A-Sketch</h1></header>
+    <main class="container">
+    </main>
+    <section class="buttons flex">
+        <button onclick="change_color('white')">White</button>
+        <button onclick="change_color('blue')">Blue</button>
+        <button onclick="change_color('yellow')">Yellow</button>
+        <button onclick="change_color('red')">Red</button>
+        <button onclick="change_color('white')">Eraser</button>
+        <button onclick="reset_color()">Reset</button>
+    </section>
 </body>
 </html>
